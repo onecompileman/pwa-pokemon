@@ -1,0 +1,6 @@
+<div class="game">
+  <div class="tile animate__animated" *ngFor="let tile of tiles" [class.matched]="tile.isMatched" [class.opened]="tile.isOpened || tile.isMatched" [class.animate__flipInY]="tile.isOpened" (click)="openTile(tile)">
+    
+      <img [src]="tile.image" alt="">
+  </div>
+</div>
